@@ -1,0 +1,25 @@
+{
+  "name": "college_post_backend",
+  "author": "Aryan Srivastava",
+  "version": "1.0.0",
+  "description": "Backend for college post website",
+  "main": "app.js",
+  "license": "ISC",
+  "scripts": {
+    "start": "nodemon --experimental-modules --es-module-specifier-resolution=node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aryan-Srivastava/College_Post_Backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Aryan-Srivastava/College_Post_Backend/issues"
+  },
+  "homepage": "https://github.com/Aryan-Srivastava/College_Post_Backend#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.7.2"
+  }
+}

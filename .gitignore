@@ -4,12 +4,20 @@
 /node_modules
 /.pnp
 .pnp.js
+.env
+dist
+dist-ssr
+*.local
 
 # testing
 /coverage
 
 # production
 /build
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
 
 # misc
 .DS_Store

@@ -1,9 +1,18 @@
-import mongoose from 'mongoose';
+const mongoose = require('mongoose');
 
 const UserSchema = new mongoose.Schema({
-    name: {
+    firstName: {
 		type: String,
 		required: true,
+	},
+	lastName: {
+		type: String,
+		required: true,
+	},
+	username: {
+		type: String,
+		required: true,
+		unique: true,
 	},
 	email: {
 		type: String,
@@ -15,10 +24,10 @@ const UserSchema = new mongoose.Schema({
 		required: true,
 		minLength: 6,
 	},
-    blogs: [{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Blog',
-    }],
-});
+	profilePicture: {
+		type: String,
+		default: '',
+	},
+}, { timestamps: true });
 
-export default mongoose.model('User', UserSchema);
+module.exports = mongoose.model('User', UserSchema);
